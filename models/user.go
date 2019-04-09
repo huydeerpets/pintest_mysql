@@ -17,7 +17,7 @@ type User struct {
 	UserStatus int `orm:"default(0)"`
 	CreationDate  time.Time
 	LastLoginTime time.Time `orm:"null"`
-	Role *Role    `orm:"rel(fk)"`
+	Role *Role    `orm:"rel(fk);default(0)"`
 	
 }
 

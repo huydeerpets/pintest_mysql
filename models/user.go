@@ -17,7 +17,8 @@ type User struct {
 	UserStatus int `orm:"default(0)"`
 	CreationDate  time.Time
 	LastLoginTime time.Time `orm:"null"`
-	Role *models.Role    `orm:"fk"`
+	Role *Role    `orm:"rel(fk)"`
+	
 }
 
 // Insert user into database

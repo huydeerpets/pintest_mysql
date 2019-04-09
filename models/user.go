@@ -8,7 +8,7 @@ import (
 
 // User is the model for a user entry in the database
 type User struct {
-	Id   int    `orm:"pk;auto"`
+	Id   int64    `orm:"pk;auto"`
 	Name string `orm:"unique"`
 
 	// password hashed with bcrypt

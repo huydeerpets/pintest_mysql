@@ -1,11 +1,11 @@
 // @APIVersion 1.0.0
-// @Title pintest webpage
-// @Description pintest webpage
+// @Title pintest_mysql webpage
+// @Description pintest_mysql webpage
 
 package routers
 
 import (
-	ctl "github.com/huydeerpets/pintest/controllers"
+	ctl "github.com/huydeerpets/pintest_mysql/controllers"
 	"github.com/astaxie/beego"
 )
 

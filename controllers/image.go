@@ -3,7 +3,7 @@ package controllers
 import (
 	"strconv"
 
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/models"
 )
 
 // ImageController serves images via http

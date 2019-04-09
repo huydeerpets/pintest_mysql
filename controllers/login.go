@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/huydeerpets/pintest/lib"
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/lib"
+	"github.com/huydeerpets/pintest_mysql/models"
 )
 
 // LoginController provides login and signup page
@@ -48,7 +48,7 @@ func (c *LoginController) Logout() {
 // SignupPage serves signup page
 func (c *LoginController) SignupPage() {
 	c.TplName = "pages/login/signup.tpl"
-	c.Data["Title"] = "Sign up to pintest"
+	c.Data["Title"] = "Sign up to pintest_mysql"
 }
 
 // Signup handles register requests

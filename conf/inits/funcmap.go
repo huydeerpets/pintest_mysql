@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/huydeerpets/pintest/lib"
+	"github.com/huydeerpets/pintest_mysql/lib"
 
 	"github.com/astaxie/beego"
 )
@@ -56,7 +56,7 @@ func init() {
 	//		=> google.de
 	beego.AddFuncMap("host", func(urlPath string) string {
 		if strings.HasPrefix(urlPath, "/") {
-			return "pintest"
+			return "pintest_mysql"
 		}
 		urlParsed, err := url.Parse(urlPath)
 		if err != nil {

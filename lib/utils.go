@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"reflect"
 
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/models"
 	"github.com/astaxie/beego"
 )
 

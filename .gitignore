@@ -2,7 +2,7 @@
 *.exe~
 *.sqlite
 *.zip
-pintest
+pintest_mysql
 tmp/*
 .vscode/*
 swagger/*

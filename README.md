@@ -1,1 +1,1 @@
-# pintest
+# pintest_mysql

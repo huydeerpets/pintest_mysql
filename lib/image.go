@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/models"
 	"github.com/astaxie/beego"
 	"github.com/nfnt/resize"
 )

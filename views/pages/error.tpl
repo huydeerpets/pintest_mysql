@@ -3,7 +3,7 @@
         <div class="title-bar">
             <div>
                 <a href="/" class="no-style">
-                    <h1 class="title static">pintest</h1>
+                    <h1 class="title static">pintest_mysql</h1>
                 </a>
             </div>
         </div>

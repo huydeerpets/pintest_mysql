@@ -3,8 +3,8 @@ package controllers
 import (
 	"log"
 
-	"github.com/huydeerpets/pintest/lib"
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/lib"
+	"github.com/huydeerpets/pintest_mysql/models"
 )
 
 // TopicController serves topic page

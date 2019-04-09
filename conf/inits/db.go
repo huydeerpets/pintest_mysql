@@ -3,7 +3,7 @@ package inits
 import (
 	"time"
 
-	_ "github.com/huydeerpets/pintest/models"
+	_ "github.com/huydeerpets/pintest_mysql/models"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"

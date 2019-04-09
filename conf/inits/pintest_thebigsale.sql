@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `pintest_thebigsale` ;
-USE `pintest_thebigsale`;
+CREATE DATABASE  IF NOT EXISTS `pintest_mysql_thebigsale` ;
+USE `pintest_mysql_thebigsale`;
 
 DROP TABLE IF EXISTS `tbs_comments`;
 CREATE TABLE `tbs_comments`(

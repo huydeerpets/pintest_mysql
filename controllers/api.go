@@ -8,11 +8,11 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"github.com/huydeerpets/pintest/lib"
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/lib"
+	"github.com/huydeerpets/pintest_mysql/models"
 )
 
-// This is the pintest api.
+// This is the pintest_mysql api.
 // It can only be accessed via HTTP POST by authenticated users.
 // Most of the functions just validate the request and use functions from the lib package
 // to handle the request.

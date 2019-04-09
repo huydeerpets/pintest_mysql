@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "github.com/huydeerpets/pintest/conf/inits"
-	_ "github.com/huydeerpets/pintest/routers"
+	_ "github.com/huydeerpets/pintest_mysql/conf/inits"
+	_ "github.com/huydeerpets/pintest_mysql/routers"
 	"github.com/astaxie/beego"
 )
 

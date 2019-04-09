@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/models"
 )
 
 // SortByRank a list of post by their rank

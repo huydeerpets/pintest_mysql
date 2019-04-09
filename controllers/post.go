@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/huydeerpets/pintest/lib"
-	"github.com/huydeerpets/pintest/models"
+	"github.com/huydeerpets/pintest_mysql/lib"
+	"github.com/huydeerpets/pintest_mysql/models"
 	"github.com/astaxie/beego"
 )
 

@@ -4,7 +4,7 @@
     <div class="title-bar">
       <div>
         <a href="/" class="no-style">
-          <h1 class="title">pintest</h1>
+          <h1 class="title">pintest_mysql</h1>
         </a>
       </div>
       <div class="lower-container">

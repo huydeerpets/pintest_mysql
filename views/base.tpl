@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="_xsrf" content="{{.xsrf_token}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <title>{{if .Title}}{{.Title}}{{else}}pintest{{end}}</title>
+    <title>{{if .Title}}{{.Title}}{{else}}pintest_mysql{{end}}</title>
     <link href="/static/css/normalize.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
     <link href="/static/icons/css/ionicons.css" rel="stylesheet">

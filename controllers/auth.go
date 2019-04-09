@@ -72,7 +72,7 @@ func (c *AuthController) RedirectForm() {
 
 // GetLogin identifies user by session key and loads user data from database
 func (c *AuthController) GetLogin() *models.User {
-	if i, ok := c.GetSession(UserInfoKey).(int); ok {
+	if i, ok := c.GetSession(UserInfoKey).(int64); ok {
 		u := &models.User{
 			Id: i,
 		}

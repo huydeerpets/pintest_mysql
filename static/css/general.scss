@@ -1,0 +1,143 @@
+/* general not element specific style*/
+
+body {
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    letter-spacing: -.42px;
+    background-color: $background-color;
+}
+
+a {
+    outline: 0;
+    color: $second-color;
+    cursor: pointer;
+    text-decoration: underline;
+    &.no-underline {
+        text-decoration: none;
+    }
+    &.no-style {
+        @extend .no-underline;
+        color: inherit;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.right {
+    float: right;
+}
+
+.page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    //margin-top: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+// children are displayed in reversed vertical order
+.reverse-order{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+hr {
+    color: lighten($color: black, $amount: 80%);
+    border-width: 1px;
+    border-top: 0;
+    border-style: solid;
+    margin: 20px 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    &:focus {outline:0 !important;}
+    &.icon-button {
+        opacity: .6;
+        transition: opacity .2s;
+        font-size: 24px;
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            transform: none;
+            opacity: 1;
+            color: black;
+        }
+        &.large {
+            font-size: 36px;
+        }
+    }
+    &.text-button {
+        font-size: 14px;
+        padding: 5px 7px;
+        color: $second-color;
+        letter-spacing: .2pt;
+        &:hover,
+        &:active {
+            color: darken($color: $second-color, $amount: 10%)
+        }
+    }
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 7px;
+    color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+        ~.description {
+            display: block !important;
+            height: 50px;
+        }
+    }
+    &.invalid{
+        border-color: rgb(199, 10, 10);
+    }
+}
+textarea {
+    width: 100%;
+    min-height: 150px;
+}
+input[type="submit"] {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    &:disabled{
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: initial;
+    }
+}
+
+.item-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    >*:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+
+.no-results{
+    font-size: 21px;
+    color: lighten($color: #000000, $amount: 50%);
+}

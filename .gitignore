@@ -1,0 +1,11 @@
+*.exe
+*.exe~
+*.sqlite
+*.zip
+pintest
+tmp/*
+.vscode/*
+swagger/*
+*.tmp
+*.pprof
+*.memprof

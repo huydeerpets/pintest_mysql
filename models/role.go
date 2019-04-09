@@ -6,7 +6,7 @@ import (
 )
 
 type Role struct {
-	Id   int    `orm:"pk;auto"`
+	Id   int    
 	RoleName string `orm:"unique;size(60)"`
 	
 }

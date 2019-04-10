@@ -38,6 +38,8 @@ func (c *SubmitController) Submit() {
 
 // CreateTopic serves topic creation page
 func (c *SubmitController) CreateTopic() {
-	c.TplName = "pages/submit/createTopic.tpl"
-	c.Data["Title"] = "Create a topic"
+	if(c.Role>lib.USER_ROLE_READER){
+		c.TplName = "pages/submit/createTopic.tpl"
+		c.Data["Title"] = "Create a topic"
+	}
 }

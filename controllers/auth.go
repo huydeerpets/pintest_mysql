@@ -17,7 +17,7 @@ type NestPreparer interface {
 // It authenticated the user by session key and loads the user data
 type AuthController struct {
 	beego.Controller
-
+	Role int
 	// The user that requests the page (nil if unauthorized)
 	User *models.User
 }
@@ -96,6 +96,11 @@ func (c *AuthController) DelLogin() {
 // SetLogin sets session cookie for client
 func (c *AuthController) SetLogin(user *models.User) {
 	c.SetSession(UserInfoKey, user.Id)
+}
+
+//ValidRole when access here
+func (c *AuthController) setRole(user *models.User) bool {
+	c.Role = user.Role
 }
 
 // LoginPath returns the login url as string

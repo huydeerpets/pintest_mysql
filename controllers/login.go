@@ -35,6 +35,7 @@ func (c *LoginController) Login() {
 			return
 		}
 		c.SetLogin(user)
+		c.SetRole(user)
 		r.Success = true
 	})
 }

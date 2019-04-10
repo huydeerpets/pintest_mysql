@@ -42,5 +42,7 @@ func (c *SubmitController) CreateTopic() {
 	if(c.Role>lib.USER_ROLE_READER){
 		c.TplName = "pages/submit/createTopic.tpl"
 		c.Data["Title"] = "Create a topic"
+	}else{
+		return
 	}
 }

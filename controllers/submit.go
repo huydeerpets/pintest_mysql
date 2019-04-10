@@ -43,6 +43,6 @@ func (c *SubmitController) CreateTopic() {
 		c.TplName = "pages/submit/createTopic.tpl"
 		c.Data["Title"] = "Create a topic"
 	}else{
-		return
+		this.Abort("401")
 	}
 }

@@ -80,12 +80,3 @@ func (u *User) ReadVoteOnComment(c *CommentMetaData) error {
 func (u *User) GetVoteOnItem(id string) orm.QuerySeter {
 	return getVotesOnItem(id).Filter("user", u)
 }
-func (usr *User) IsAdmin() bool {
-	return usr.Role.Id == USER_ROLE_ADMIN
-}
-func (usr *User) IsPublisher() bool {
-	return usr.Role.Id == USER_ROLE_PUBLISHER
-}
-func (usr *User) IsReader() bool {
-	return usr.Role.Id == USER_ROLE_READER
-}

@@ -7,7 +7,6 @@ import (
 func init() {
 	// register models to orm
 	orm.RegisterModel(
-		new(Role),
 		new(User),
 		new(Topic),
 		new(Post),

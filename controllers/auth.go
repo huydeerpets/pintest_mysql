@@ -99,7 +99,7 @@ func (c *AuthController) SetLogin(user *models.User) {
 }
 
 //ValidRole when access here
-func (c *AuthController) setRole(user *models.User) {
+func (c *AuthController) SetRole(user *models.User) {
 	c.Role = user.Role
 }
 

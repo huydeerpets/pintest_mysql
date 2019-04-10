@@ -62,6 +62,7 @@ func (c *LoginController) Signup() {
 			return
 		}
 		c.SetLogin(user)
+		c.SetRole(user)
 		r.Success = true
 	})
 }

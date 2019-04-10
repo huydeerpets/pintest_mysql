@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/huydeerpets/pintest_mysql/models"
+	"github.com/huydeerpets/pintest_mysql/lib"
 )
 
 // SubmitController handles new posts and topics

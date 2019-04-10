@@ -17,7 +17,7 @@ type User struct {
 	UserStatus int `orm:"default(0)"`
 	CreationDate  time.Time
 	LastLoginTime time.Time `orm:"null"`
-	Role *Role    `orm:"default(0)"`
+	Role int 		`orm:"size(8);default(0)" json:"-"`	//normal, admin, moderate, view
 	
 }
 

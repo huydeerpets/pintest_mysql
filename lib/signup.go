@@ -24,6 +24,7 @@ func SignupUser(username, password string) (*models.User, error) {
 		Password:      string(hashedPw),
 		LastLoginTime: now,
 		CreationDate:  now,
+		Role:		   USER_ROLE_READER,
 	}
 	if err := u.Insert(); err != nil {
 		return nil, err

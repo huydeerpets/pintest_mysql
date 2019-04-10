@@ -1,0 +1,7 @@
+package lib
+const (
+	USER_ROLE_READER = 0
+	USER_ROLE_PUBLISHER = 1
+	USER_ROLE_ADMIN = 2
+
+)
